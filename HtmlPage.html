@@ -1,0 +1,187 @@
+﻿<section class="cta-banner">
+	<div class="contentfull cta-bannerDiv">
+		<div class="cta-banner-img">
+			<img alt="" class="mobHide" src="%URL%images/cta-banner-img.png" title="" /><img alt="" class="mobShow" src="%URL%images/mobile/cta-banner-img.png" title="" /></div>
+		<a class="close" href="javascript:;">&nbsp;</a></div>
+</section>
+<section class="hbanner borderbox august">
+	<div class="hbleftpart">
+		<img alt="" src="%URL%images/pf-perfection-reinvented-homepage-banner.jpg" title="" /></div>
+	<div class="hbrightpart">
+		<div class="grip">
+			<h1>
+				<span>MINERAL WEAR<sup>&reg;</sup> ABC CUSHION FOUNDATION</span></h1>
+			<p>
+				Provides your complexion with instantly smooth, firm-looking &amp; hydrated skin for effortless perfection</p>
+			<a class="learnmore" href="%FULLURL%product-line/mineral-wear.html" title="LEARN MORE">LEARN MORE &nbsp;<i class="fa fa-angle-right">&nbsp;</i></a></div>
+	</div>
+	<div class="home-banner-arrow">
+		&nbsp;</div>
+</section>
+<section class="productfeaturingDiv" id="divproduct">
+	<div class="contentfull">
+		<div class="productDetailRelated related-product productfeaturing">
+			<div class="title">
+				The <span>NEW!</span> Bronzer line, featuring:</div>
+			%PRODUCTLIST%</div>
+	</div>
+</section>
+<div class="contentfull">
+	<div class="videoInstagram">
+		<div class="videoInstagram-left">
+			<div class="subTitle">
+				Watch the Latest How-To Video</div>
+			%VIDEOHOMEPAGE%
+			<div class="videoTextBtn">
+				<div class="text">
+					Check out our other <span>How-To Videos</span> for Physicians Formula product tips + tricks!</div>
+				<div class="learnmore">
+					<a href="%FULLURL%how-to-videos.html" title="GO">GO &nbsp;<i class="fa fa-angle-right">&nbsp;</i> </a></div>
+				<div class="clear">
+					&nbsp;</div>
+			</div>
+		</div>
+		<div class="videoInstagram-right">
+			<div class="videoInstagram-content">
+				<div class="title">
+					<i class="fa fa-instagram">&nbsp;</i>Fresh from <span>@PhysiciansFormula</span> on Instagram:</div>
+				<div class="instaDiv">
+					<ul class="insta_gal_list" id="ulInstagramPosts">
+					</ul>
+					<div class="clear">
+						&nbsp;</div>
+				</div>
+				<div class="learnmore">
+					<a href="https://www.instagram.com/physiciansformula/" target="_blank" title="FOLLOW US">FOLLOW US &nbsp;<i class="fa fa-angle-right">&nbsp;</i> </a></div>
+			</div>
+		</div>
+	</div>
+	<div class="clear">
+		&nbsp;</div>
+	<div class="home-slider-product-bg">
+		<div id="slide_product">
+			<div>
+				<div>
+					<!--<span id="spanProductsBoxPrevBtn"><a class="inactive" href="javascript:void(0);">&nbsp;</a></span> <span id="spanProductsBoxnextBtn"><a href="javascript:void(0);">&nbsp;</a></span>-->
+					<div id="products_img_box">
+						<ul class="flex-slider-rows">
+							<li class="flex-slider-item">
+								<div class="checkitoutDiv">
+									<a class="checkitOutbtn" href="%FULLURL%product-line/eyebooster.html">BROW BOOSTER<i class="fa fa-angle-right">&nbsp;</i></a></div>
+								<a href="%FULLURL%product-line/eyebooster.html"><img alt="BROW BOOSTER" src="%URL%images/related-product-browbooster.jpg" /></a></li>
+							<li class="flex-slider-item">
+								<div class="checkitoutDiv">
+									<a class="checkitOutbtn" href="%FULLURL%product-line/bronzer-boutique.html">BUTTER BRONZER<i class="fa fa-angle-right">&nbsp;</i></a></div>
+								<a href="%FULLURL%product-line/bronzer-boutique.html"><img alt="BUTTER BRONZER" src="%URL%images/related-product-butterbronzer.jpg" /></a></li>
+							<li class="flex-slider-item">
+								<div class="checkitoutDiv">
+									<a class="checkitOutbtn" href="%starofthemonthUrl%">STAR OF THE MONTH<i class="fa fa-angle-right">&nbsp;</i></a></div>
+								<a href="%starofthemonthUrl%"><img alt="STAR OF THE MONTH" src="%starofthemonthImage%" /></a></li>
+							<li class="flex-slider-item">
+								<div class="checkitoutDiv">
+									<a class="checkitOutbtn" href="%FULLURL%category.html">SHOP ALL PRODUCTS<i class="fa fa-angle-right">&nbsp;</i></a></div>
+								<a href="%FULLURL%category.html"><img alt="SHOP ALL PRODUCTS" src="%URL%images/shop-all-projects.jpg" /></a></li>
+							<li class="flex-slider-item">
+								<div class="checkitoutDiv">
+									<a class="checkitOutbtn" href="%FULLURL%award-in-the-press.html">IN THE PRESS<i class="fa fa-angle-right">&nbsp;</i></a></div>
+								<a href="%FULLURL%award-in-the-press.html"><img alt="IN THE PRESS" src="%URL%images/in-the-press.jpg" /></a></li>
+							<li class="flex-slider-item">
+								<div class="checkitoutDiv">
+									<a class="checkitOutbtn" href="%FULLURL%mascara-chart.html">Find Your Lash Look<i class="fa fa-angle-right">&nbsp;</i></a></div>
+								<a href="%FULLURL%mascara-chart.html"><img alt="Find Your Lash Look" src="%URL%images/muscra.jpg" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        changeOrientationSlider();
+        $(window).on("orientationchange", function (event) {
+            changeOrientationSlider();
+        });
+        var relatedcount = $(".productDetailRelated #flex-product-list-default .flex-slider-item").length;
+        var flexnav = false;
+
+
+
+        var output;
+        var windowWidth = $(window).width();
+        if (windowWidth < 641) output = 2;
+        else if (windowWidth < 1025) output = 3;
+        else output = 4;
+        //var numOfItems = $(window).width()<=1024 ? 3 : 4;	
+        if (relatedcount > output)
+            flexnav = true;
+
+        setTimeout(function () {
+
+            $("#flex-product-list-default").flexslider({
+                namespace: "flex-",
+                selector: ".flex-slider-rows > .flex-slider-item ",
+                animation: "slide",
+                direction: "horizontal",
+                animationLoop: false,
+                initDelay: 200,
+                smoothHeight: true,
+                controlNav: false,
+                directionNav: flexnav,
+                itemWidth: 70,
+                minItems: output,
+                maxItems: output,
+                maxItemsShow: output,
+                move: 1,
+                slideshow: false,
+                start: function (slider) {
+                    $("#flex-product-list-default ").css("opacity", "1");
+                    $("#flex-product-list-default").css("visibility", "visible");
+                    //$("#flex-product-list-default").css("height", "350");
+                    //console.log(slider);
+                    //console.log(slider.last);
+                    slider.resize();
+                }
+            });
+        }, 500);
+    });
+
+    function changeOrientationSlider() {
+
+        if ($(window).width() > 1023) {
+            $("#products_img_box").flexslider({
+                selector: ".flex-slider-rows > .flex-slider-item ",
+                animation: "slide",
+                direction: "horizontal",
+                reverse: false,
+                animationLoop: false,
+                initDelay: 0,
+                randomize: false,
+                pauseOnAction: true,
+                pauseOnHover: false,
+                smoothHeight: false,
+                controlNav: true,
+                directionNav: true,
+                itemWidth: 100,
+                minItems: 4,
+                maxItems: 4,
+                move: 1,
+                namespace: "flex-",
+                slideshow: false,
+                start: function (slider) {
+                    $("#products_img_box ").css("opacity", "1");
+                    $("#products_img_box").css("visibility", "visible");
+                    //$("#products_img_box").css("height", "350");
+                    slider.resize();
+                }
+            });
+        }
+    }
+
+    function showVideo(ctrl, strVideoURL) {
+        $(ctrl).hide();
+        var strframe = "<iframe  class=\"carousel-image\"  src=\"" + strVideoURL + "\" frameborder=\"0\" allowfullscreen></iframe>";
+        $(strframe).insertBefore($(ctrl));
+    }
+
+</script>
